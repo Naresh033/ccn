@@ -1,0 +1,41 @@
+Step 1) Place the devices and make the connections as shown in above fig.
+
+Step 2) We consider two mail servers namely gmail.com and hotmail.com, each domain having two users; sachin and
+rahul in gmail.com and sahil and rakesh in hotmail.com
+
+Step 3) Now we start configuration of DHCP Server, Click on Server0 → Desktop → IP Configuration Type IP
+Address: 192.168.10.1 and DNS Server: 192.168.10.2 Then click on Tab Services → DHCP, type DNS Server:
+192.168.10.2 Select On option of Service and click Save button.
+
+Step 4) Now we start configuration of DNS Server, Click on Server1 → Desktop → IP Configuration Select DHCP
+option, requesting IP address and then automatically assigns IP address as 192.168.10.2
+Message displays as DHCP request successful.
+
+Step 5) Repeat step 4 for remaining devices except switches. So, it automatically assigns IP address to each device by
+requesting IP address from DHCP server.
+
+Step 6) Again go to DNS server → Services, Type Name: gmail.com and Address: 192.168.10.3 as Server2’s IP
+Address, then click Add button, it will add the record in its list. Then Type Name: hotmail.com and Address: 192.168.10.4
+as Server3’ IP Address, click Add button.
+
+Step 7) Add gmail.com users in gmail server and hotmail.com users in hotmail.com. Click on Server2 → Services
+→ Email Note that SMTP and POP3 Service should be On. Type Domain Name: gmail.com click Set button. Then
+User: sachin Password: sachin123 and click ‘+’ Button, it will add the user. User: rahul Password: rahul123 and click ‘+’
+Button.
+
+Step 8) Repeat step 7 for hotmail server, add users sahil and rakesh; set password as sahil123 and rakesh123 respectively.
+
+Step 9) Now configure account from client side. Click on PC0 → Desktop → Email → Configure Mail
+Type Your Name: Sachin, Email Address: sachin@gmail.com , set gmail.com as Incoming & Outgoing Mail Server, User
+Name: sachin, password: sachin123 And click save button.
+
+Step 10) Repeat step 9 for PC1, PC2, PC3 and configure Mail account for respective users as shown in fig.
+
+Step 11) Now check mail server by sending mail from one client to other. First send mail from
+sachin@gmail.com to rahul@gmail.com Click on PC0 → Desktop → Email → Compose
+Type rahul@gmail.com in To field and type some text in Subject and Body fields. And clickSend
+button to send the message to rahul@gmail.com.
+
+Step 12) Now check the received mail. Click on PC2 → Desktop → Email → Receive
+It will display message came from PC0 (sachin@gmail.com) * Same you can check mail server by sending mail from
+gmail.com to hotmail.com.
